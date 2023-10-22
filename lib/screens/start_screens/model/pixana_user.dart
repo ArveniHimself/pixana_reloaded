@@ -1,5 +1,3 @@
-import 'dart:typed_data';
-
 /// Enumeration of genders.
 enum Gender { male, female, divers }
 

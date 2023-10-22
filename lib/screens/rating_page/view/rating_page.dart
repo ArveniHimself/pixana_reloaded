@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pixana_reloaded/screens/rating_page/bloc/rating_page_bloc.dart';
 import 'package:pixana_reloaded/screens/rating_page/cubit/theme_mode_cubit.dart';
@@ -8,7 +7,6 @@ import 'package:pixana_reloaded/screens/rating_page/view/rating_sections.dart/ra
 import 'package:pixana_reloaded/screens/rating_page/view/rating_sections.dart/rating_actions_buttons.dart';
 import 'package:pixana_reloaded/screens/rating_page/view/rating_sections.dart/rating_widget.dart';
 import 'package:pixana_reloaded/shared/services/screens_size_service.dart';
-import 'package:pixana_reloaded/shared/themes/themes.dart';
 import 'package:pixana_reloaded/shared/widgets/buttons/animated_token_button.dart';
 
 class RatingPage extends StatefulWidget {

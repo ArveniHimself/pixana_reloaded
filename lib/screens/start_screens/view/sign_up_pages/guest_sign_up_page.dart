@@ -13,6 +13,7 @@ class GuestSignUpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Opens dialog for the user to select birthdayYear
     Future<int?> pickAge(BuildContext context) async {
       return await showMaterialNumberPicker(
         context: context,

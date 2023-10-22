@@ -49,9 +49,8 @@ flutter:
   # Hier sind alle Assets der Anwendung.
   assets:
     - assets/   # Alle Dateien im assets-Ordner
-
-
-uses-material-design: true  # Includes Material Design for the application.
+  
+  uses-material-design: true  # Includes Material Design for the application.
 
 
 
