@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:pixana_reloaded/home.dart';
@@ -24,13 +25,17 @@ void main() async {
   final authCubit = AuthenticationCubit(FirebaseAuth.instance);
   // Check if any user is logged in upon start of the App.
   authCubit.checkAuthentication();
+
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]).then((_) {
+    runApp(
+      BlocProvider.value(
+        value: authCubit,
+        child: const Pixana(),
+      ),
+    );
+  });
   // The app pixana is started here.
-  runApp(
-    BlocProvider.value(
-      value: authCubit,
-      child: const Pixana(),
-    ),
-  );
 }
 
 class Pixana extends StatelessWidget {
