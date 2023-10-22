@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:pixana_reloaded/screens/start_screens/view/sign_up_pages/anonymous_sign_up.dart';
+import 'package:pixana_reloaded/screens/start_screens/view/sign_up_pages/guest_sign_up_page.dart';
 import 'package:pixana_reloaded/screens/start_screens/view/single_onboarding_screen.dart';
 
 class Onboarding extends StatefulWidget {
@@ -280,7 +280,7 @@ class _OnboardingState extends State<Onboarding> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => const AnonymousSignUpPage()),
+                                            builder: (context) => const GuestSignUpPage()),
                                       );
                                     },
                                   ),

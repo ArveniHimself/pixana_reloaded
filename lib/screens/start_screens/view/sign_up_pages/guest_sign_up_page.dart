@@ -8,8 +8,8 @@ import 'package:pixana_reloaded/screens/start_screens/bloc/registration_state.da
 import 'package:pixana_reloaded/screens/start_screens/model/pixana_user.dart';
 
 /// This page is used to get some information needed in case a new user is using the anonymous login.
-class AnonymousSignUpPage extends StatelessWidget {
-  const AnonymousSignUpPage({super.key});
+class GuestSignUpPage extends StatelessWidget {
+  const GuestSignUpPage({super.key});
 
   @override
   Widget build(BuildContext context) {
