@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "201340134121",
+    "project_id": "pixana-reloaded",
+    "storage_bucket": "pixana-reloaded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201340134121:android:d55fcabd3ed4fe8ff08678",
+        "android_client_info": {
+          "package_name": "com.example.pixana_reloaded"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQz1XcA9JGK7bpR-HKw4yOelelh2LeqaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+name: pixana_reloaded
+description: The Pixana App. Reloaded.  # Brief description of the project.
+
+# This line prevents accidental publishing to pub.dev for private packages.
+publish_to: 'none'
+
+# Version and build number for the application.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.1 <4.0.0'  # Specifies the required Flutter SDK version.
+#---------------------------------------------------------------------------------------------------
+# Dependencies required for the application to function.
+dependencies:
+  flutter:
+    sdk: flutter  # The Flutter framework itself.
+  cupertino_icons: ^1.0.6  # Cupertino style icons used for iOS.
+  firebase_core: ^2.16.0 # Plugin to use the Firebase Core API, which enables connecting to multiple Firebase apps.
+  firebase_auth: ^4.10.0 # Plugin to use the Firebase Authentication API.
+  smooth_star_rating_null_safety: ^1.0.4+2 # Enables the usage of the rating stars widget.
+  icons_launcher: ^2.1.3 # Package for adding an app icon.
+  flutter_bloc: ^8.1.3 # Package for important bloc functions.
+  bloc: ^8.1.2 # Additional package for flutter bloc.
+  meta: ^1.9.1 # Package providing support for metadata declarations.
+  flutter_spinkit: ^5.2.0 # Package providing a collection of loading indicators for Flutter.
+  smartrefresh: ^0.0.2 # Package related to refreshing and updating the UI in the app by "pull-to-refresh".
+  get: ^4.6.6 # GetX is a package for extra-light state management, navigation and dependency management.
+  provider: ^6.0.5 # A wrapper around InheritedWidget to make them easier to use and more reusable.
+  talker_logger: ^3.1.0 # Package related to logging functionalities.
+  flutter_material_pickers: ^3.6.0 # Package containing commonly used material design picker dialogs.
+  shared_preferences: ^2.2.2 # Wraps platform-specific persistent storage for simple data (iOS & Android). !!!Not for critical data!!!
+#---------------------------------------------------------------------------------------------------
+# Configurations for the app icon
+icons_launcher:
+  image_path: 'C:\dev\pixana_reloaded\assets\logo\final_icon.png' # Path to the app icon image.
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+#---------------------------------------------------------------------------------------------------
+# Development dependencies for testing and linting.
+dev_dependencies:
+  flutter_test:
+    sdk: flutter  # Flutter testing framework.
+  flutter_lints: ^2.0.3  # Set of recommended lints to encourage good coding practices.
+
+flutter:
+  # Hier sind alle Assets der Anwendung.
+  assets:
+    - assets/   # Alle Dateien im assets-Ordner
+
+  uses-material-design: true  # Includes Material Design for the application.
+
+
+
