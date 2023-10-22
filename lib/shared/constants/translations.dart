@@ -45,7 +45,7 @@ class Messages extends Translations {
           'enterValidEmail': 'Please enter a valid Email',
           'aLittleMoreAboutYou': 'One more step and you can join!',
           'selectRegion': 'Where do you live?',
-          'selectAge': 'What is your age?',
+          'selectBirthdayYear': 'What year were you born?',
           'selectGender': 'As what gender do you identify yourself?',
           'acceptTermsConditions': 'I accept the Terms & Conditions',
           'termsAndConditionsOfPixanaButton': 'The Terms & Conditions of Pixana',

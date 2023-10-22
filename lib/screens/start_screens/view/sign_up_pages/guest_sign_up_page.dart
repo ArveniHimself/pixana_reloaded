@@ -16,7 +16,7 @@ class GuestSignUpPage extends StatelessWidget {
     Future<int?> pickAge(BuildContext context) async {
       return await showMaterialNumberPicker(
         context: context,
-        title: 'Pick Your Age',
+        title: 'Select your birthday year',
         maxNumber: 2007,
         minNumber: 1950,
         backgroundColor: Colors.white,
@@ -85,7 +85,7 @@ class GuestSignUpPage extends StatelessWidget {
               height: 75,
             ),
             Text(
-              'selectAge'.tr,
+              'selectBirthdayYear'.tr,
               style: const TextStyle(fontSize: 14, color: Colors.white),
             ),
             const SizedBox(
@@ -97,7 +97,7 @@ class GuestSignUpPage extends StatelessWidget {
               children: [
                 const Spacer(),
                 SizedBox(
-                  width: 250,
+                  width: 200,
                   height: 45,
                   child: ElevatedButton(
                     style: ButtonStyle(
@@ -119,7 +119,7 @@ class GuestSignUpPage extends StatelessWidget {
                           color: Colors.white,
                         ),
                         Text(
-                          "Click to select your age",
+                          "Click to select",
                           style: TextStyle(
                             color: Colors.white,
                           ),

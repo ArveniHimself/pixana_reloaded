@@ -1,0 +1,8 @@
+# Build Verzeichnis ignorieren
+build/
+
+# Alle .log Dateien ignorieren
+*.log
+
+# Die Datei local.properties ignorieren
+local.properties

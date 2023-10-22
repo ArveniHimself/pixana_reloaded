@@ -4,6 +4,19 @@
       jars="C:\dev\pixana_reloaded\build\app\intermediates\flutter\release\libs.jar"
       resolved="__local_aars__:C:\dev\pixana_reloaded\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
   <library
+      name="C:\dev\pixana_reloaded\android@@:shared_preferences_android::release"
+      jars="C:\dev\pixana_reloaded\build\shared_preferences_android\.transforms\dcf205884cb64e598128e50340fafe5a\transformed\out\jars\classes.jar;C:\dev\pixana_reloaded\build\shared_preferences_android\.transforms\dcf205884cb64e598128e50340fafe5a\transformed\out\jars\libs\R.jar"
+      resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:unspecified"
+      folder="C:\dev\pixana_reloaded\build\shared_preferences_android\.transforms\dcf205884cb64e598128e50340fafe5a\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="C:\dev\pixana_reloaded\android@@:firebase_auth::release"
       jars="C:\dev\pixana_reloaded\build\firebase_auth\.transforms\2f9ff167d569fdd50fa320729b9a0a01\transformed\out\jars\classes.jar;C:\dev\pixana_reloaded\build\firebase_auth\.transforms\2f9ff167d569fdd50fa320729b9a0a01\transformed\out\jars\libs\R.jar"
       resolved="io.flutter.plugins.firebase.auth:firebase_auth:unspecified"
@@ -110,6 +123,10 @@
       jars="C:\Users\Adnan\.gradle\caches\modules-2\files-2.1\io.flutter\x86_64_release\1.0.0-b8d35810e91ab8fc39ba5e7a41bff6f697e8e3a8\70442dcca4edb863694cc92692bf493ca8b4e6e9\x86_64_release-1.0.0-b8d35810e91ab8fc39ba5e7a41bff6f697e8e3a8.jar"
       resolved="io.flutter:x86_64_release:1.0.0-b8d35810e91ab8fc39ba5e7a41bff6f697e8e3a8"/>
   <library
+      name="androidx.lifecycle:lifecycle-common-java8:2.2.0@jar"
+      jars="C:\Users\Adnan\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common-java8\2.2.0\cd3478503da69b1a7e0319bd2d1389943db9b364\lifecycle-common-java8-2.2.0.jar"
+      resolved="androidx.lifecycle:lifecycle-common-java8:2.2.0"/>
+  <library
       name="androidx.fragment:fragment:1.1.0@aar"
       jars="C:\Users\Adnan\.gradle\caches\transforms-3\75f94412898c7559d34d7edbbeaeb394\transformed\fragment-1.1.0\jars\classes.jar"
       resolved="androidx.fragment:fragment:1.1.0"
@@ -188,27 +205,6 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"
-      jars="C:\Users\Adnan\.gradle\caches\transforms-3\47ecd4e588b99ef3b772f04d5aa6c9b7\transformed\versionedparcelable-1.1.1\jars\classes.jar"
-      resolved="androidx.versionedparcelable:versionedparcelable:1.1.1"
-      folder="C:\Users\Adnan\.gradle\caches\transforms-3\47ecd4e588b99ef3b772f04d5aa6c9b7\transformed\versionedparcelable-1.1.1"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.collection:collection:1.1.0@jar"
-      jars="C:\Users\Adnan\.gradle\caches\modules-2\files-2.1\androidx.collection\collection\1.1.0\1f27220b47669781457de0d600849a5de0e89909\collection-1.1.0.jar"
-      resolved="androidx.collection:collection:1.1.0"/>
-  <library
-      name="androidx.lifecycle:lifecycle-common-java8:2.2.0@jar"
-      jars="C:\Users\Adnan\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common-java8\2.2.0\cd3478503da69b1a7e0319bd2d1389943db9b364\lifecycle-common-java8-2.2.0.jar"
-      resolved="androidx.lifecycle:lifecycle-common-java8:2.2.0"/>
-  <library
       name="androidx.lifecycle:lifecycle-runtime:2.2.0@aar"
       jars="C:\Users\Adnan\.gradle\caches\transforms-3\793c4fa41fed024d54f0246b25b34906\transformed\lifecycle-runtime-2.2.0\jars\classes.jar"
       resolved="androidx.lifecycle:lifecycle-runtime:2.2.0"
@@ -281,6 +277,23 @@
       name="androidx.arch.core:core-common:2.1.0@jar"
       jars="C:\Users\Adnan\.gradle\caches\modules-2\files-2.1\androidx.arch.core\core-common\2.1.0\b3152fc64428c9354344bd89848ecddc09b6f07e\core-common-2.1.0.jar"
       resolved="androidx.arch.core:core-common:2.1.0"/>
+  <library
+      name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"
+      jars="C:\Users\Adnan\.gradle\caches\transforms-3\47ecd4e588b99ef3b772f04d5aa6c9b7\transformed\versionedparcelable-1.1.1\jars\classes.jar"
+      resolved="androidx.versionedparcelable:versionedparcelable:1.1.1"
+      folder="C:\Users\Adnan\.gradle\caches\transforms-3\47ecd4e588b99ef3b772f04d5aa6c9b7\transformed\versionedparcelable-1.1.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.collection:collection:1.1.0@jar"
+      jars="C:\Users\Adnan\.gradle\caches\modules-2\files-2.1\androidx.collection\collection\1.1.0\1f27220b47669781457de0d600849a5de0e89909\collection-1.1.0.jar"
+      resolved="androidx.collection:collection:1.1.0"/>
   <library
       name="androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar"
       jars="C:\Users\Adnan\.gradle\caches\transforms-3\03b9b3b952540ee8cedf6c096276d934\transformed\lifecycle-viewmodel-2.1.0\jars\classes.jar"

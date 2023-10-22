@@ -1,4 +1,4 @@
-#Thu Oct 19 21:42:07 CEST 2023
+#Sun Oct 22 19:51:13 CEST 2023
 base.0=C\:\\dev\\pixana_reloaded\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
