@@ -5,9 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pixana_reloaded/screens/rating_page/cubit/theme_mode_cubit.dart';
 import 'package:pixana_reloaded/screens/user_tests_page/view/placeholder_testcard.dart';
-import 'package:pixana_reloaded/screens/start_screens/cubit/authentication_cubit.dart';
-import 'package:pixana_reloaded/screens/start_screens/services/authentication_service.dart';
-import 'package:pixana_reloaded/shared/services/screens_size_service.dart';
+import 'package:pixana_reloaded/shared/global_services/screens_size_service.dart';
+
+import '../../start_screens/controller/auth_service.dart';
+import '../../start_screens/controller/cubit/authentication_cubit.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -87,7 +88,7 @@ class _ProfilePageState extends State<ProfilePage> with AutomaticKeepAliveClient
                                         await Future.delayed(const Duration(seconds: 1), () {
                                           Navigator.pop(context);
                                           debugPrint("Anonym logout");
-                                          AuthService().signOutAnonymously(context: context);
+                                          AuthService.instance.signOutAnonymously(context: context);
                                           debugPrint("Anonym logout done");
                                         });
                                       },
@@ -159,7 +160,7 @@ class _ProfilePageState extends State<ProfilePage> with AutomaticKeepAliveClient
                                 await Future.delayed(const Duration(seconds: 1), () {
                                   Navigator.pop(context);
                                   debugPrint("Anonym logout");
-                                  AuthService().signOutAnonymously(context: context);
+                                  AuthService.instance.signOutAnonymously(context: context);
                                   debugPrint("Anonym logout done");
                                 });
                               },

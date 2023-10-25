@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pixana_reloaded/screens/rating_page/cubit/theme_mode_cubit.dart';
-import 'package:pixana_reloaded/shared/services/screens_size_service.dart';
+import 'package:pixana_reloaded/shared/global_services/screens_size_service.dart';
 import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.dart';
 
 class PlaceholderTestcard extends StatelessWidget {

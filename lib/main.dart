@@ -6,14 +6,13 @@ import 'package:get/get.dart';
 import 'package:pixana_reloaded/home.dart';
 import 'package:pixana_reloaded/screens/rating_page/bloc/rating_page_bloc.dart';
 import 'package:pixana_reloaded/screens/rating_page/cubit/theme_mode_cubit.dart';
-import 'package:pixana_reloaded/screens/start_screens/bloc/registration_bloc.dart';
-import 'package:pixana_reloaded/screens/start_screens/bloc/registration_state.dart';
 import 'package:pixana_reloaded/screens/start_screens/view/onboarding_screens.dart';
-import 'package:pixana_reloaded/screens/start_screens/cubit/authentication_cubit.dart';
 import 'package:pixana_reloaded/shared/constants/translations.dart';
 import 'package:pixana_reloaded/shared/themes/themes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'screens/start_screens/controller/bloc/registration_bloc.dart';
+import 'screens/start_screens/controller/cubit/authentication_cubit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -59,7 +58,7 @@ class Pixana extends StatelessWidget {
         ),
         // Provide RegistrationBloc for registration page state
         BlocProvider(
-          create: (context) => RegistrationBloc(RegistrationBlocState()),
+          create: (context) => RegistrationBloc(),
         )
       ],
       child: BlocBuilder<AuthenticationCubit, UserObject>(

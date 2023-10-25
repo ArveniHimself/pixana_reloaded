@@ -6,7 +6,7 @@ import 'package:pixana_reloaded/screens/rating_page/view/rating_sections.dart/co
 import 'package:pixana_reloaded/screens/rating_page/view/rating_sections.dart/rating_image.dart';
 import 'package:pixana_reloaded/screens/rating_page/view/rating_sections.dart/rating_actions_buttons.dart';
 import 'package:pixana_reloaded/screens/rating_page/view/rating_sections.dart/rating_widget.dart';
-import 'package:pixana_reloaded/shared/services/screens_size_service.dart';
+import 'package:pixana_reloaded/shared/global_services/screens_size_service.dart';
 import 'package:pixana_reloaded/shared/widgets/buttons/animated_token_button.dart';
 
 class RatingPage extends StatefulWidget {

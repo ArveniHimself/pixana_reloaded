@@ -18,7 +18,6 @@ class PixanaUser {
   final Gender gender;
   final String userName;
   final String email;
-  // TODO age or birthday?
   final int birthdayYear;
   String profilePicId;
   bool isVerified;

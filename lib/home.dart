@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pixana_reloaded/screens/profile_page/view/profile_page.dart';
 import 'package:pixana_reloaded/screens/rating_page/cubit/theme_mode_cubit.dart';
 import 'package:pixana_reloaded/screens/rating_page/view/rating_page.dart';
-import 'package:pixana_reloaded/shared/services/screens_size_service.dart';
+import 'package:pixana_reloaded/shared/global_services/screens_size_service.dart';
 
 // Own files
 import 'screens/user_tests_page/view/user_tests_page.dart';

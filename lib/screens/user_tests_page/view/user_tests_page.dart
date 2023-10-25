@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pixana_reloaded/screens/rating_page/cubit/theme_mode_cubit.dart';
 import 'package:pixana_reloaded/screens/user_tests_page/view/placeholder_testcard.dart';
-import 'package:pixana_reloaded/shared/services/screens_size_service.dart';
+import 'package:pixana_reloaded/shared/global_services/screens_size_service.dart';
 import 'package:pixana_reloaded/shared/widgets/buttons/animated_token_button.dart';
 
 class UserTestsPage extends StatefulWidget {
