@@ -241,10 +241,9 @@ class _OnboardingState extends State<Onboarding> {
                                   //guest button
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
-                                      elevation: 0,
-                                      side: const BorderSide(color: Colors.black),
-                                      backgroundColor: Colors.black,
-                                    ),
+                                        elevation: 0,
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black),
                                     child: SizedBox(
                                       width: constraints.maxWidth * 0.55,
                                       height: 45,
@@ -253,7 +252,7 @@ class _OnboardingState extends State<Onboarding> {
                                         children: [
                                           const Icon(
                                             Icons.login_outlined,
-                                            color: Colors.white,
+                                            color: Colors.black,
                                           ),
                                           const Spacer(),
                                           RichText(
@@ -263,7 +262,6 @@ class _OnboardingState extends State<Onboarding> {
                                                 TextSpan(
                                                     text: "guestLogin".tr,
                                                     style: const TextStyle(
-                                                      color: Colors.white,
                                                       fontWeight: FontWeight.w500,
                                                     )),
                                               ],
@@ -274,10 +272,6 @@ class _OnboardingState extends State<Onboarding> {
                                       ),
                                     ),
                                     onPressed: () {
-                                      // TODO
-                                      // debugPrint("Anonym login");
-                                      // AuthService().signInAnonymously(context);
-                                      // debugPrint("Anonym login done");
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
@@ -429,17 +423,62 @@ class _OnboardingState extends State<Onboarding> {
                                       ),
                                     ],
                                   ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
                                 ],
                               ),
                             ),
                           ],
                         ),
                       ),
+
                       //indicators
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: _buildPageIndicator(),
                       ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+
+                      // Cool "Continue" button
+                      _currentpage < 5
+                          ? Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                SizedBox(
+                                  width: 300,
+                                  height: 50,
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      side: const BorderSide(color: Colors.black),
+                                      elevation: 0,
+                                      backgroundColor: Colors
+                                          .white, // This changes the background color of the button
+                                      foregroundColor: Colors
+                                          .black, // This changes the color of the text and icon
+                                    ),
+                                    onPressed: () {
+                                      if (_currentpage < 5) {
+                                        setState(() {
+                                          _currentpage++;
+                                          _bigPageController.animateToPage(_currentpage,
+                                              duration: const Duration(milliseconds: 400),
+                                              curve: Curves.linear);
+                                        });
+                                      }
+                                    },
+                                    child: _currentpage < 1
+                                        ? const Text("Get Started")
+                                        : const Text("Continue"),
+                                  ),
+                                ),
+                              ],
+                            )
+                          : const SizedBox(
+                              height: 50,
+                            ),
                     ],
                   ),
                 ),

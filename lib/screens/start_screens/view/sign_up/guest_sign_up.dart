@@ -15,42 +15,13 @@ class GuestSignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Opens dialog for the user to select birthdayYear
-    Future<int?> pickAge(BuildContext context) async {
-      return await showMaterialNumberPicker(
-        context: context,
-        title: 'Select your birthday year',
-        maxNumber: 2007,
-        minNumber: 1950,
-        backgroundColor: Colors.white,
-        selectedNumber: 2000,
-      );
-    }
-
     return Scaffold(
-      appBar:
-          // AppBar
-          AppBar(
-        backgroundColor: Colors.teal[900],
-        elevation: 0,
-        systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Colors.teal[900],
-        ),
-        leading: IconButton(
-          icon: const Icon(
-            Icons.arrow_back,
-            color: Colors.white,
-          ),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
+      appBar: guestSignUpAppBar(context), // The Appbar.
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         decoration:
-            // Linear Gradient design of onboarding
+            // Linear Gradient design of onboarding.
             BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -71,7 +42,7 @@ class GuestSignUp extends StatelessWidget {
         ),
         child: Column(
           children: [
-            // Title of page
+            // Title of page.
             //------------------------------------------------------------------------------------
             const SizedBox(
               height: 35,
@@ -86,7 +57,7 @@ class GuestSignUp extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
 
-            // Age picker
+            // Age picker.
             //------------------------------------------------------------------------------------
             const SizedBox(
               height: 75,
@@ -98,7 +69,7 @@ class GuestSignUp extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            // SelectAge + Show selectedAge
+            // SelectAge + Show selectedAge.
             Row(
               children: [
                 const Spacer(),
@@ -173,7 +144,7 @@ class GuestSignUp extends StatelessWidget {
               "selectGender".tr,
               style: const TextStyle(fontSize: 14, color: Colors.white),
             ),
-            //gender input -> needs checking
+            //gender input -> needs checking.
             Padding(
               padding: const EdgeInsets.symmetric(
                 vertical: 15,
@@ -191,7 +162,8 @@ class GuestSignUp extends StatelessWidget {
                           style: ButtonStyle(
                             elevation: MaterialStateProperty.all(0),
                             backgroundColor: MaterialStateProperty.all(
-                              state.gender != Gender.male
+                              state.gender !=
+                                      Gender.male // Highlight the male option if its chosen.
                                   ? Colors.black38
                                   : Theme.of(context).colorScheme.secondary,
                             ),
@@ -397,10 +369,12 @@ class GuestSignUp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () async {
+                      // 1. Step - User clicks on the login button.
                       context.read<RegistrationBloc>().add(
                             ClickedLoginButton(clickedLoginButton: true),
                           );
 
+                      //
                       await Future.delayed(
                         const Duration(seconds: 3),
                         () {
@@ -418,11 +392,17 @@ class GuestSignUp extends StatelessWidget {
                         } else {
                           debugPrint("nav not pop");
 
-                          context.read<RegistrationBloc>().state.readyToNavigate.toString();
+                          debugPrint(
+                              context.read<RegistrationBloc>().state.readyToNavigate.toString());
 
                           await showModalBottomSheet(
                             context: context,
-                            builder: (context) => const Text("Login failed. Try again."),
+                            builder: (context) => const SizedBox(
+                              height: 100,
+                              child: Center(
+                                child: Text("Login failed. Try again."),
+                              ),
+                            ),
                           );
                         }
                       });
@@ -459,6 +439,37 @@ class GuestSignUp extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  // Opens dialog for the user to select birthdayYear
+  Future<int?> pickAge(BuildContext context) async {
+    return await showMaterialNumberPicker(
+      context: context,
+      title: 'Select your birthday year',
+      maxNumber: 2007,
+      minNumber: 1950,
+      backgroundColor: Colors.white,
+      selectedNumber: 2000,
+    );
+  }
+
+  AppBar guestSignUpAppBar(BuildContext context) {
+    return AppBar(
+      backgroundColor: Colors.teal[900],
+      elevation: 0,
+      systemOverlayStyle: SystemUiOverlayStyle(
+        statusBarColor: Colors.teal[900],
+      ),
+      leading: IconButton(
+        icon: const Icon(
+          Icons.arrow_back,
+          color: Colors.white,
+        ),
+        onPressed: () {
+          Navigator.pop(context);
+        },
       ),
     );
   }
